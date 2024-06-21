@@ -3,7 +3,7 @@
 console.log("seif")
 
 async function getWeather(location) {
-    var response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=bcf381d5108d4cac8b8161901242006&q=${location}&days=3`);
+    var response = await fetch(`Https://api.weatherapi.com/v1/forecast.json?key=bcf381d5108d4cac8b8161901242006&q=${location}&days=3`);
     if (response.ok && 400 != response.status) {
         var mydata = await response.json();
         displayWeather(mydata);
